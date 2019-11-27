@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/regular_Gotham Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/bold_Gotham Pro.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/regular_Bebas Neue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/bold_Bebas Neue.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal; 
+}

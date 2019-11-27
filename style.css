@@ -1,0 +1,605 @@
+.wrapper-header {
+    background-color: #f0ebe8;
+    position: relative;
+}
+
+.wrapper-header::after {
+    content: '';
+    display: block;
+    background-image: url(images/grave.png);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    z-index: 1;
+}
+
+/*header start*/
+header {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: #f0ebe8;
+    padding: 20px;
+    padding-bottom: 0;
+    max-width: 1554px;
+    margin: auto;
+}
+
+
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo div {
+    font-family: 'Bebas Neue';
+}
+
+#logo h2 {
+    font-size: 28px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+#logo p {
+    font-size: 14px;
+    color: #d4416a;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    line-height: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Gotham Pro';
+    color: #333333;
+    position: relative;
+}
+#active {
+    color: #d4416a;
+    border-bottom: 1px solid #d4416a;
+    
+    
+}
+header nav a:hover {
+    color: #d4416a;
+}
+
+header nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #d4416a;
+
+    transition: 1s;
+    transform: scaleX(0);
+    ;
+}
+
+header nav a:active:before {
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+.tel__numb {
+    display: flex;
+    align-items: baseline;
+    font-family: 'Bebas Neue';
+}
+
+.tel__numb p {
+    font-weight: bold;
+    padding: 3px;
+}
+
+.tel__numb span {
+    font-weight: normal;
+}
+
+/*header end*/
+.wrapper-main {
+    background-color: #dee1d2;
+    position: relative;
+    padding: 40px 0;
+
+}
+
+.wrapper-main::after {
+    content: '';
+    display: block;
+    background-image: url(images/grave.png);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    transform: scale(1, -1);
+}
+
+/*main start*/
+main {
+    display: flex;
+    height: 500px;
+    max-width: 1554px;
+    margin: auto;
+    position: relative;
+
+
+
+}
+
+.box-left {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-left h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue';
+}
+
+.box-left h2 span {
+    color: #d4416a;
+}
+
+.box-left .mascala-price {
+    display: none;
+}
+
+.box-left p {
+    text-align: center;
+    line-height: 30px;
+    width: 70%;
+    font-size: 1em;
+}
+
+.box-left button {
+    background-color: #c93f66;
+    border: 5px solid #c93f66;
+    border-bottom: 5px solid #ab3456;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.7em;
+
+    width: 300px;
+    height: 60px;
+    transition: 1s;
+}
+
+.box-left button span {
+    font-weight: bold;
+}
+
+.box-left button:hover {
+    border-bottom: 5px solid #c93f66;
+    transition: 1s;
+    position: relative;
+}
+
+.box-right {
+    width: 55%;
+    position: relative;
+    margin: -30px 0;
+    overflow: hidden;
+
+
+}
+
+
+.box-right .mascala-price {
+    position: absolute;
+    right: 430px;
+    top: 90px;
+    z-index: 1;
+}
+
+.box-right .price {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: 2;
+    width: 9em;
+}
+
+.box-right .mascala {
+    width: 13em;
+}
+
+.box-right .woman {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40em;
+
+}
+
+/*main end*/
+/*footer start*/
+.wrapper-footer {
+    background-color: #f0ebe8;
+    position: relative;
+    
+}
+
+.wrapper-footer::after {
+    content: '';
+    display: block;
+    background-image: url(images/grave.png);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    position: relative;
+    max-width: 1554px;
+    margin: auto;
+    box-sizing: border-box;
+    
+}
+
+footer h2 {
+    font-size: 2em;
+    font-family: 'Gotham Pro';
+    color: #db6e8c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .kylie-text {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+
+footer .kylie-text .kylie {
+    width: 20%;
+}
+
+footer .kylie-text p {
+    font-family: 'Gotham Pro';
+    font-size: 1em;
+    line-height: 30px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+footer .kylie-text p span {
+    font-weight: bold;
+}
+
+footer button {
+    background-color: #c93f66;
+    border: 5px solid #c93f66;
+    border-bottom: 5px solid #ab3456;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.7em;
+    width: 300px;
+    height: 60px;
+
+
+
+    transition: 1s;
+}
+
+footer button span {
+    font-weight: bold;
+}
+
+footer button:hover {
+    border-bottom: 5px solid #c93f66;
+    transition: 1s;
+    position: relative;
+}
+
+footer .lip-kit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    width: 20%;
+}
+
+/*footer end*/
+
+
+
+
+
+
+
+
+@media (max-width:1250px) {
+    main {
+        height: 440px;
+    }
+
+    .box-right .mascala-price {
+        right: 370px;
+        top: 90px;
+    }
+
+    .box-right .woman {
+        width: 36em;
+    }
+
+    .box-right .price {
+        width: 7em;
+    }
+
+    .box-right .mascala {
+        width: 11em;
+    }
+}
+
+@media (max-width:1150px) {
+
+
+    .box-left h2 {
+        font-size: 2em;
+    }
+
+    .box-right .woman {
+        width: 35em;
+        right: -20px;
+
+    }
+
+    .box-right .price {
+        width: 6em;
+        left: -30px;
+        top: -30px;
+
+    }
+
+    .box-right .mascala {
+        width: 10em;
+    }
+
+
+}
+
+
+@media (max-width:1024px) {
+    #logo {
+        flex-basis: 50%;
+    }
+
+    header nav {
+        flex-grow: 1;
+        order: 1;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+    
+    #active {
+        border: none;
+    }
+    header nav a::before {
+        display: none;
+    }
+
+    main {
+        height: 350px;
+    }
+
+    .box-left {
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+
+
+    .box-left p {
+        text-align: left;
+    }
+
+    .box-left button {
+        width: 235px;
+        height: 48px;
+    }
+
+    .box-right .woman {
+        width: 30em;
+    }
+
+    .box-right .mascala-price {
+        right: 330px;
+        top: 100px;
+    }
+
+    .box-right .price {
+        width: 5em;
+        top: -28px;
+        left: -28px;
+    }
+
+    .box-right .mascala {
+        width: 8em;
+    }
+
+    footer .lip-kit {
+        display: none;
+    }
+
+    footer button {
+        width: 235px;
+        height: 48px;
+    }
+
+
+
+}
+
+@media (max-width:910px) {
+    .woman {
+        display: none;
+    }
+
+    .box-right {
+        flex-basis: 40%;
+    }
+
+    .box-left {
+        flex-basis: 60%;
+    }
+
+    .box-right .mascala-price {
+        right: 35%;
+        top: 25%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .kylie-text {
+        flex-direction: column;
+    }
+
+    footer .kylie-text .kylie {
+        width: 229px;
+    }
+
+
+    footer .kylie-text p {
+        width: 90%;
+    }
+}
+
+@media (max-width:690px) {
+    main {
+        height: auto;
+    }
+
+    .box-right {
+        display: none;
+    }
+
+    .box-left {
+        flex-basis: 100%;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .box-left .mascala-price {
+        display: block;
+        height: 50%;
+        position: relative;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 0;
+
+    }
+
+    .box-left .price {
+        /*        width: 80%;*/
+        height: 40%;
+        position: absolute;
+        top: -15%;
+        left: -25%;
+    }
+
+    .box-left .mascala {
+        /*        width: 100%;*/
+        height: 100%;
+    }
+
+
+
+
+}
+
+@media (max-width:580px) {
+    footer h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:495px) {
+    header {
+        justify-content: center;
+    }
+
+    #logo {
+        flex-basis: 70%;
+    }
+
+    header nav {
+        display: none;
+
+    }
+
+    footer h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:400px) {
+    .box-left h2 {
+        font-size: 1.6em;
+    }
+
+    .box-left .mascala-price {
+        height: 30%;
+        margin-top: 10px;
+    }
+
+    .box-left p {
+        order: 3;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width:365px) {
+    #logo {
+        flex-basis: 85%;
+        flex-wrap: nowrap;
+
+    }
+
+    .tel {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-evenly;
+    }
+
+    .tel__numb img {
+        display: none;
+    }
+}
