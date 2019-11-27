@@ -11,6 +11,12 @@
     font-style: normal; 
 }
 @font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/medium_Gotham Pro.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Bebas Neue';
     src: url('fonts/regular_Bebas Neue.ttf') format('truetype');
     font-weight: normal;
